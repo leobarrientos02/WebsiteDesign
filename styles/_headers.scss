@@ -48,6 +48,8 @@
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
   .nav-links {
+    font-size: 4rem;
+    flex-basis: 30rem;
     li {
       display: flex;
       justify-content: center;
@@ -57,8 +59,9 @@
     }
   }
   .contact {
+    flex-basis: 25rem;
     h2 {
-      font-size: 2rem;
+      font-size: 4rem;
     }
     .form-section {
       width: 100%;
@@ -90,4 +93,7 @@
       }
     }
   }
+}
+.burger {
+  cursor: pointer;
 }
