@@ -1,7 +1,9 @@
+// GLOBAL
 let controller;
 let slideScene;
 let pageScene;
 
+// FUNCTIONS
 function animateSlides() {
   //Init Controller
   controller = new ScrollMagic.Controller();
@@ -61,6 +63,38 @@ function animateSlides() {
       .addTo(controller);
   });
 } // Ends animateSlides()
+
+//Cursor
+
+const mouse = document.querySelector(".cursor");
+const mouseTxt = mouse.querySelector("span");
+const burger = document.querySelector(".burger");
+function cursor(e) {
+  mouse.style.top = e.pageY + "px";
+  mouse.style.left = e.pageX + "px";
+}
+
+function activeCursor(e) {
+  const item = e.target;
+  if (item.id === "logo" || item.classList.contains("burger")) {
+    mouse.classList.add("nav-active");
+  } else {
+    mouse.classList.remove("nav-active");
+  }
+  if (item.classList.contains("explore")) {
+    mouse.classList.add("explore-active");
+    gsap.to(".title-swipe", 1, { y: "0%" });
+    mouseTxt.innerText = "Tap";
+  } else {
+    mouse.classList.remove("explore-active");
+    mouseTxt.innerText = "";
+    gsap.to(".title-swipe", 1, { y: "100%" });
+  }
+}
+
+//Event Listener
+window.addEventListener("mousemove", cursor);
+window.addEventListener("mouseover", activeCursor);
 
 // Function Call
 animateSlides();
