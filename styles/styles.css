@@ -351,4 +351,67 @@ body {
 body.hide {
   overflow: hidden;
 }
+
+.fashion1,
+.fashion2,
+.fashion3 {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+  margin-top: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.fashion-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+}
+
+.fashion-text h1 {
+  font-size: 6rem;
+  padding: 5rem 0rem;
+}
+
+.fashion-text p {
+  font-size: 2rem;
+  padding: 2rem 2rem 0rem 0rem;
+  margin-bottom: 10rem;
+}
+
+.fashion1 h1 {
+  color: #ff8b5d;
+}
+
+.fashion2 h1 {
+  color: #a76ee7;
+}
+
+.fashion3 h1 {
+  color: #567ce4;
+}
+
+.fashion-nr {
+  font-size: 15rem;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  color: white;
+  opacity: 0.2;
+}
 /*# sourceMappingURL=styles.css.map */
