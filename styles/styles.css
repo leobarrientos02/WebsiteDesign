@@ -355,7 +355,7 @@ body.hide {
 .fashion1,
 .fashion2,
 .fashion3 {
-  min-height: 90vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,19 +379,34 @@ body.hide {
       -ms-flex: 1;
           flex: 1;
   position: relative;
-  -ms-flex-preferred-size: 25rem;
-      flex-basis: 25rem;
+  -ms-flex-preferred-size: 20rem;
+      flex-basis: 20rem;
 }
 
 .fashion-text h1 {
   font-size: 6rem;
-  padding: 5rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .fashion-text p {
   font-size: 2rem;
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
+}
+
+.fashion-img {
+  height: 70vh;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+}
+
+.fashion-img img {
+  width: 25rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .fashion1 h1 {
@@ -407,11 +422,11 @@ body.hide {
 }
 
 .fashion-nr {
-  font-size: 15rem;
+  font-size: 8.2rem;
   position: absolute;
   left: 50%;
   bottom: 10%;
   color: white;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 /*# sourceMappingURL=styles.css.map */

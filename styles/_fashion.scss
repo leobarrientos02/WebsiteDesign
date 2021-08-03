@@ -1,7 +1,7 @@
 .fashion1,
 .fashion2,
 .fashion3 {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,15 +15,25 @@
 .fashion-text {
   flex: 1;
   position: relative;
-  flex-basis: 25rem;
+  flex-basis: 20rem;
   h1 {
     font-size: 6rem;
-    padding: 5rem 0rem;
+    padding: 1rem 0rem;
   }
   p {
     font-size: 2rem;
     padding: 2rem 2rem 0rem 0rem;
     margin-bottom: 10rem;
+  }
+}
+.fashion-img {
+  height: 70vh;
+  flex-basis: 25rem;
+  img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: top;
   }
 }
 .fashion1 {
@@ -42,10 +52,10 @@
   }
 }
 .fashion-nr {
-  font-size: 15rem;
+  font-size: 8.2rem;
   position: absolute;
   left: 50%;
   bottom: 10%;
   color: white;
-  opacity: 0.2;
+  opacity: 0.4;
 }
