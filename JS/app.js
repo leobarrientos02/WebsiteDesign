@@ -25,7 +25,6 @@ function animateSlides() {
     slideTl.fromTo(revealImg, { x: "0%" }, { x: "100%" });
     slideTl.fromTo(img, { scale: 2 }, { scale: 1 }, "-+1");
     slideTl.fromTo(revealText, { x: "0%" }, { x: "100%" }, "-=0.75");
-    slideTl.fromTo(nav, { y: "-100%" }, { y: "0%" }, "-=0.5");
 
     //Create Scene
     slideScene = new ScrollMagic.Scene({
@@ -34,11 +33,11 @@ function animateSlides() {
       reverse: false,
     })
       .setTween(slideTl)
-      .addIndicators({
+      /*       .addIndicators({
         colorStart: "white",
         colorTrigger: "white",
         name: "slide",
-      })
+      }) */
       .addTo(controller);
     // New animation
     const pageTl = gsap.timeline();
@@ -53,12 +52,12 @@ function animateSlides() {
       duration: "100%",
       triggerHook: 0,
     })
-      .addIndicators({
+      /*       .addIndicators({
         colorStart: "white",
         colorTrigger: "white",
         name: "page",
         indent: 200,
-      })
+      }) */
       .setPin(slide, { pushFollowers: false })
       .setTween(pageTl)
       .addTo(controller);
@@ -105,13 +104,13 @@ function navToggle(e) {
     e.target.classList.remove("active");
     gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
     gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
-    gsap.to("#logo", 1, { color: "black" });
+    gsap.to("#logo", 1, { color: "white" });
     gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
     document.body.classList.remove("hide");
   }
 }
 
-//Barba Page Transtions
+//Barba Page Transitions
 const logo = document.querySelector("#logo");
 barba.init({
   views: [
@@ -120,12 +119,6 @@ barba.init({
       beforeEnter() {
         animateSlides();
         logo.href = "./index.html";
-        gsap.fromTo(
-          ".nav-header",
-          1,
-          { y: "100%" },
-          { y: "0%", ease: "power2.inOut" }
-        );
       },
       beforeLeave() {
         slideScene.destroy();
@@ -138,12 +131,6 @@ barba.init({
       beforeEnter() {
         logo.href = "../index.html";
         detailAnimation();
-        gsap.fromTo(
-          ".nav-header",
-          1,
-          { y: "100%" },
-          { y: "0%", ease: "power2.inOut" }
-        );
       },
       beforeLeave() {
         controller.destroy();
@@ -155,9 +142,8 @@ barba.init({
     {
       leave({ current, next }) {
         let done = this.async();
-        //An animation
+        //An Animation
         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
-
         tl.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0 });
         tl.fromTo(
           ".swipe",
@@ -171,15 +157,23 @@ barba.init({
         let done = this.async();
         //Scroll to the top
         window.scrollTo(0, 0);
-        //An animation
+        //An Animation
         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
         tl.fromTo(
           ".swipe",
-          0.75,
+          1,
           { x: "0%" },
+
           { x: "100%", stagger: 0.2, onComplete: done }
         );
         tl.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1 });
+        tl.fromTo(
+          ".nav-header",
+          1,
+          { y: "-100%" },
+          { y: "0%", ease: "power2.inOut" },
+          "-=1.5"
+        );
       },
     },
   ],
@@ -194,7 +188,7 @@ function detailAnimation() {
     const nextImg = nextSlide.querySelector("img");
     slideTl.fromTo(slide, { opacity: "1" }, { opacity: "0" });
     slideTl.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }), "-=1";
-    slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" });
+    slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" }, "-=0.5");
     //Scene
     detailScene = new ScrollMagic.Scene({
       triggerElement: slide,
@@ -203,11 +197,11 @@ function detailAnimation() {
     })
       .setPin(slide, { pushFollowers: false })
       .setTween(slideTl)
-      .addIndicators({
+      /*       .addIndicators({
         colorStart: "white",
         colorTrigger: "white",
         name: "detailScene",
-      })
+      }) */
       .addTo(controller);
   });
 }
