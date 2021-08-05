@@ -470,7 +470,7 @@ body.hide {
 }
 
 .fashion-text h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   padding: 1rem 0rem;
 }
 
@@ -493,6 +493,11 @@ body.hide {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+#elena-joy {
+  -o-object-position: center !important;
+     object-position: center !important;
 }
 
 .fashion1 h1 {

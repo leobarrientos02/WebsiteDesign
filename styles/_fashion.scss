@@ -17,7 +17,7 @@
   position: relative;
   flex-basis: 25.2rem;
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     padding: 1rem 0rem;
   }
   p {
@@ -35,6 +35,9 @@
     object-fit: cover;
     object-position: top;
   }
+}
+#elena-joy {
+  object-position: center !important;
 }
 .fashion1 {
   h1 {
