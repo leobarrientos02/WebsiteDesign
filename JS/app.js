@@ -137,6 +137,17 @@ barba.init({
         detailScene.destroy();
       },
     },
+    {
+      namespace: "painting",
+      beforeEnter() {
+        logo.href = "../index.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
   ],
   transitions: [
     {

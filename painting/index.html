@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Website with amazing transition and animations using JavaScript.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Art | Paintings</title>
+    <link rel="icon" href="../icons/iconmonstr-paintbrush-10.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+</head>
+<body data-barba="wrapper">
+    <header class="nav-header">
+        <h1><a href="../index.html" id="logo">days.</a></h1>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+    </header>
+    <main data-barba="container" data-barba-namespace="painting">
+        <section class="painting1 detail-slide">
+            <div class="painting-text">
+                <h1>Tom Trenk</h1>
+                <p>
+                    Luis Trenk is a talented artist from New York well known for his unique and weird art work.
+                    Most of his work can be found throughout the streets of Brooklyn, New York, covering large areas
+                    such as walls and buildings. 
+                </p>
+            </div>
+            <div class="painting-img">
+                <img src="../img/painting-img1.png" alt="painting-image1">
+            </div>
+            <div class="painting-nr">
+                <span>01</span>
+            </div>
+        </section>
+        <section class="painting2 detail-slide">
+            <div class="painting-text">
+                <h1>Jose Barri</h1>
+                <p>
+                   Jose Barri is well known in his home country of Mexico for his beautiful semi-realistic art work.
+                   He creates these amazing art works in honor of his mexican heritage where he can display some of his
+                   amazing mexican culture.
+                </p>
+            </div>
+            <div class="painting-img">
+                <img src="../img/painting-img2.png" alt="painting-image2">
+            </div>
+            <div class="painting-nr">
+                <span>02</span>
+            </div>
+        </section>
+        <section class="painting3 detail-slide">
+            <div class="painting-text">
+                <h1>Jeff Hardy</h1>
+                <p>
+                    Jeff Hardy is both an artist and a professional wrestler working with many famous
+                    companies such as WWE and TNA. On his free-time he enjoys creating art with his own unique
+                    style.
+                  </p>
+            </div>
+            <div class="painting-img">
+                <img  src="../img/painting-img3.png" alt="painting-image3">
+            </div>
+            <div class="painting-nr">
+                <span>03</span>
+            </div>
+        </section>
+    </main>
+    <nav class="nav-bar">
+        <ul class="nav-links">
+            <li>
+                <a href="https://github.com/leobarrientos02" title="github-profile" target="_blank" rel="noopener noreferrer">
+                    <img id="github" src="../icons/github-sign.svg" alt="github-profile">
+                </a>
+                <a href="https://github.com/leobarrientos02" id="a-text" title="github-profile" target="_blank" rel="noopener noreferrer">
+                    <span>Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/leonel-barrientos-519b5a152/" title="linkedin-profile" target="_blank" rel="noopener noreferrer">
+                    <img id="linkedin" src="../icons/linkedin.svg" alt="linkedin-profile">
+                </a>
+                <a href="https://www.linkedin.com/in/leonel-barrientos-519b5a152/" id="a-text" title="linkedin-profile" target="_blank" rel="noopener noreferrer">
+                    <span>LinkedIn</span>
+                </a>
+            </li>           
+            <li>
+                <a href="https://twitter.com/L3O_BARRI3nT0S" title="twitter-social-media" target="_blank" rel="noopener noreferrer">
+                    <img id="twitter" src="../icons/twitter-sign.svg" alt="twitter-social-media">
+                </a>
+                <a href="https://twitter.com/L3O_BARRI3nT0S" id="a-text" title="twitter-social-media" target="_blank" rel="noopener noreferrer">
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/leo_barrientos182/" title="instagram-social-media" target="_blank" rel="noopener noreferrer">
+                    <img id="instagram" src="../icons/instagram.svg" alt="instagram-social-media">
+                </a>
+                <a href="https://www.instagram.com/leo_barrientos182/" id="a-text" title="instagram-social-media" target="_blank" rel="noopener noreferrer">
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCnLwo3-caCdv6eOjGzJ0eEg" title="youtube-social-media" target="_blank" rel="noopener noreferrer">
+                    <img id="youtube" src="../icons/youtube.svg" alt="youtube-social-media">
+                </a>
+                <a href="https://www.youtube.com/channel/UCnLwo3-caCdv6eOjGzJ0eEg" id="a-text" title="youtube-social-media" target="_blank" rel="noopener noreferrer">
+                    <span>Youtube</span>
+                </a>
+            </li>
+        </ul>
+        <div class="contact">
+            <h2 style="margin-left: 2rem;">Stay in touch.</h2>
+            <div class="form-section">
+                <form action="https://formspree.io/f/mzbyjglz" method="POST">
+                    <label style="margin-left: 2rem;" for="name">Name</label>
+                    <input style="width: 20rem;margin-left: 2rem;" type="text" name="name" id="name" required>
+                    <label style="margin-left: 2rem;" for="email">Email</label>
+                    <input style="width: 20rem;margin-left: 2rem;"  type="email" name="_replyto"" id="email" required>
+                    <label style="margin-left: 2rem;" for="message">Message</label>
+                    <textarea style="resize: none;width: 20rem;margin-left: 2rem;" name="message" id="message" cols="20" rows="4"></textarea>
+                    <button style="width: 20rem;margin-left: 2rem;" value="send" type="submit">Submit</button>  
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="cursor">
+        <span class="cursor-text"></span>
+    </div>
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/app.js"></script>
+</body>
+</html>  

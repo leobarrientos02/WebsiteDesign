@@ -466,9 +466,9 @@ body.hide {
   z-index: 3;
 }
 
-.forest1,
-.forest2,
-.forest3 {
+.painting1,
+.painting2,
+.painting3 {
   min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,7 +488,7 @@ body.hide {
   position: relative;
 }
 
-.forest-text {
+.painting-text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -497,24 +497,24 @@ body.hide {
       flex-basis: 25.2rem;
 }
 
-.forest-text h1 {
+.painting-text h1 {
   font-size: 7rem;
   padding: 1rem 0rem;
 }
 
-.forest-text p {
-  font-size: 1.6rem;
+.painting-text p {
+  font-size: 1.4rem;
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
 }
 
-.forest-img {
+.painting-img {
   height: 70vh;
   -ms-flex-preferred-size: 27rem;
       flex-basis: 27rem;
 }
 
-.forest-img img {
+.painting-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -523,19 +523,19 @@ body.hide {
      object-position: top;
 }
 
-.forest1 h1 {
-  color: #ff8b5d;
+.painting1 h1 {
+  color: #3f922a;
 }
 
-.forest2 h1 {
-  color: #a76ee7;
+.painting2 h1 {
+  color: #da1919;
 }
 
-.forest3 h1 {
+.painting3 h1 {
   color: #567ce4;
 }
 
-.forest-nr {
+.painting-nr {
   font-size: 6rem;
   font-weight: bold;
   position: absolute;
@@ -570,9 +570,9 @@ body.hide {
   z-index: 3;
 }
 
-.hike1,
-.hike2,
-.hike3 {
+.sport1,
+.sport2,
+.sport3 {
   min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,7 +592,7 @@ body.hide {
   position: relative;
 }
 
-.hike-text {
+.sport-text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -601,24 +601,24 @@ body.hide {
       flex-basis: 25.2rem;
 }
 
-.hike-text h1 {
+.sport-text h1 {
   font-size: 7rem;
   padding: 1rem 0rem;
 }
 
-.hike-text p {
+.sport-text p {
   font-size: 1.6rem;
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
 }
 
-.hike-img {
+.sport-img {
   height: 70vh;
   -ms-flex-preferred-size: 27rem;
       flex-basis: 27rem;
 }
 
-.hike-img img {
+.sport-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -627,19 +627,19 @@ body.hide {
      object-position: top;
 }
 
-.hike1 h1 {
+.sport1 h1 {
   color: #ff8b5d;
 }
 
-.hike2 h1 {
+.sport2 h1 {
   color: #a76ee7;
 }
 
-.hike3 h1 {
+.sport3 h1 {
   color: #567ce4;
 }
 
-.hike-nr {
+.sport-nr {
   font-size: 6rem;
   font-weight: bold;
   position: absolute;
@@ -680,14 +680,26 @@ body.hide {
     height: 50vh;
   }
   .fashion-text h1 {
-    font-size: 2rem;
+    font-size: 6rem;
     padding: 1rem 0rem;
   }
   .fashion-text p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .fashion-img img {
-    height: 50vh;
+    height: 60vh;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .painting-text h1 {
+    font-size: 6rem;
+    padding: 1rem 0rem;
+  }
+  .painting-text p {
+    font-size: 1.4rem;
+  }
+  .painting-img img {
+    height: 60vh;
     -o-object-position: top;
        object-position: top;
   }
@@ -695,7 +707,11 @@ body.hide {
 
 @media screen and (max-width: 1024px) {
   main {
+    overflow-y: visible;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     margin: 0;
   }
   .slide {
@@ -728,14 +744,38 @@ body.hide {
     text-align: center;
   }
   .fashion-text p {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     padding: 0;
+    font-size: 1.4rem;
   }
   .fashion-text h1 {
-    margin: 2rem 0rem;
+    font-size: 4rem;
+    margin: 1rem 0rem;
   }
   .fashion-nr {
-    font-size: 8rem;
+    display: none;
+  }
+  .fashion-img img {
+    height: 40vh;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .painting-text p {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+  .painting-text h1 {
+    margin: 1rem 0rem;
+    font-size: 4rem;
+  }
+  .painting-nr {
+    display: none;
+  }
+  .painting-img img {
+    height: 40vh;
+    -o-object-position: top;
+       object-position: top;
   }
   .nav-bar {
     display: block;
@@ -797,6 +837,16 @@ body.hide {
     margin: 2rem 0rem;
   }
   .fashion-nr {
+    font-size: 8rem;
+  }
+  .painting-text p {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .painting-text h1 {
+    margin: 2rem 0rem;
+  }
+  .painting-nr {
     font-size: 8rem;
   }
   .nav-bar {

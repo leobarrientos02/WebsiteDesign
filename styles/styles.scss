@@ -2,8 +2,8 @@
 @import "headers";
 @import "slides";
 @import "fashion";
-@import "forest";
-@import "hike";
+@import "painting";
+@import "sport";
 
 /*Media Queries */
 @media screen and (max-width: 1500px) {
@@ -11,20 +11,33 @@
     height: 50vh;
   }
   .fashion-text h1 {
-    font-size: 2rem;
+    font-size: 6rem;
     padding: 1rem 0rem;
   }
   .fashion-text p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .fashion-img img {
-    height: 50vh;
+    height: 60vh;
+    object-position: top;
+  }
+  .painting-text h1 {
+    font-size: 6rem;
+    padding: 1rem 0rem;
+  }
+  .painting-text p {
+    font-size: 1.4rem;
+  }
+  .painting-img img {
+    height: 60vh;
     object-position: top;
   }
 }
 @media screen and (max-width: 1024px) {
   main {
+    overflow-y: visible;
     width: 100%;
+    height: fit-content;
     margin: 0;
   }
   .slide {
@@ -57,14 +70,36 @@
     text-align: center;
   }
   .fashion-text p {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     padding: 0;
+    font-size: 1.4rem;
   }
   .fashion-text h1 {
-    margin: 2rem 0rem;
+    font-size: 4rem;
+    margin: 1rem 0rem;
   }
   .fashion-nr {
-    font-size: 8rem;
+    display: none;
+  }
+  .fashion-img img {
+    height: 40vh;
+    object-position: top;
+  }
+  .painting-text p {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+  .painting-text h1 {
+    margin: 1rem 0rem;
+    font-size: 4rem;
+  }
+  .painting-nr {
+    display: none;
+  }
+  .painting-img img {
+    height: 40vh;
+    object-position: top;
   }
   .nav-bar {
     display: block;
@@ -126,6 +161,16 @@
     margin: 2rem 0rem;
   }
   .fashion-nr {
+    font-size: 8rem;
+  }
+  .painting-text p {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .painting-text h1 {
+    margin: 2rem 0rem;
+  }
+  .painting-nr {
     font-size: 8rem;
   }
   .nav-bar {
