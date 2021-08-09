@@ -148,6 +148,17 @@ barba.init({
         detailScene.destroy();
       },
     },
+    {
+      namespace: "sport",
+      beforeEnter() {
+        logo.href = "../index.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
   ],
   transitions: [
     {

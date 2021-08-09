@@ -32,6 +32,17 @@
     height: 60vh;
     object-position: top;
   }
+  .sport-text h1 {
+    font-size: 6rem;
+    padding: 1rem 0rem;
+  }
+  .sport-text p {
+    font-size: 1.4rem;
+  }
+  .sport-img img {
+    height: 60vh;
+    object-position: top;
+  }
 }
 @media screen and (max-width: 1024px) {
   main {
@@ -98,6 +109,22 @@
     display: none;
   }
   .painting-img img {
+    height: 40vh;
+    object-position: top;
+  }
+  .sport-text p {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+  .sport-text h1 {
+    font-size: 4rem;
+    margin: 1rem 0rem;
+  }
+  .sport-nr {
+    display: none;
+  }
+  .sport-img img {
     height: 40vh;
     object-position: top;
   }
@@ -171,6 +198,16 @@
     margin: 2rem 0rem;
   }
   .painting-nr {
+    font-size: 8rem;
+  }
+  .sport-text p {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .sport-text h1 {
+    margin: 2rem 0rem;
+  }
+  .sport-nr {
     font-size: 8rem;
   }
   .nav-bar {

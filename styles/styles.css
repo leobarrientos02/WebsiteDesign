@@ -627,6 +627,11 @@ body.hide {
      object-position: top;
 }
 
+.sport-img #sport-img1 {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .sport1 h1 {
   color: #ff8b5d;
 }
@@ -699,6 +704,18 @@ body.hide {
     font-size: 1.4rem;
   }
   .painting-img img {
+    height: 60vh;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .sport-text h1 {
+    font-size: 6rem;
+    padding: 1rem 0rem;
+  }
+  .sport-text p {
+    font-size: 1.4rem;
+  }
+  .sport-img img {
     height: 60vh;
     -o-object-position: top;
        object-position: top;
@@ -777,6 +794,23 @@ body.hide {
     -o-object-position: top;
        object-position: top;
   }
+  .sport-text p {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+  .sport-text h1 {
+    font-size: 4rem;
+    margin: 1rem 0rem;
+  }
+  .sport-nr {
+    display: none;
+  }
+  .sport-img img {
+    height: 40vh;
+    -o-object-position: top;
+       object-position: top;
+  }
   .nav-bar {
     display: block;
   }
@@ -847,6 +881,16 @@ body.hide {
     margin: 2rem 0rem;
   }
   .painting-nr {
+    font-size: 8rem;
+  }
+  .sport-text p {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .sport-text h1 {
+    margin: 2rem 0rem;
+  }
+  .sport-nr {
     font-size: 8rem;
   }
   .nav-bar {
