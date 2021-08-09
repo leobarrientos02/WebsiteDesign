@@ -21,13 +21,13 @@
     padding: 1rem 0rem;
   }
   p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 2rem 2rem 0rem 0rem;
     margin-bottom: 10rem;
   }
 }
 .sport-img {
-  height: 70vh;
+  height: 60vh;
   flex-basis: 27rem;
   img {
     width: 100%;
@@ -36,22 +36,22 @@
     object-position: top;
   }
   #sport-img1 {
-    object-position: center;
+    object-position: center !important;
   }
 }
 .sport1 {
   h1 {
-    color: rgb(255, 139, 93);
+    color: rgb(26, 138, 138);
   }
 }
 .sport2 {
   h1 {
-    color: rgb(167, 110, 231);
+    color: rgb(218, 25, 25);
   }
 }
 .sport3 {
   h1 {
-    color: rgb(86, 124, 228);
+    color: rgb(219, 207, 42);
   }
 }
 .sport-nr {

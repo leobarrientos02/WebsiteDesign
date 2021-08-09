@@ -607,13 +607,13 @@ body.hide {
 }
 
 .sport-text p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
 }
 
 .sport-img {
-  height: 70vh;
+  height: 60vh;
   -ms-flex-preferred-size: 27rem;
       flex-basis: 27rem;
 }
@@ -628,20 +628,20 @@ body.hide {
 }
 
 .sport-img #sport-img1 {
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: center !important;
+     object-position: center !important;
 }
 
 .sport1 h1 {
-  color: #ff8b5d;
+  color: #1a8a8a;
 }
 
 .sport2 h1 {
-  color: #a76ee7;
+  color: #da1919;
 }
 
 .sport3 h1 {
-  color: #567ce4;
+  color: #dbcf2a;
 }
 
 .sport-nr {
